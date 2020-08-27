@@ -11,7 +11,7 @@ To use the cli tools, put your spec under `config`. Put your custom python funct
 python cli.py <file containing your spec> <a yaml file containing resource types> <a yaml file contains pids> --libraryPath <sub dir containing custom python functions> --nthreads <number of threads> --level <level>  <timestamp> --pdsHost <pds plugin host> --pdsPort <pds plugin port> --configDir <mapper config dir>
 ```
 
-For example
+For example,
 
 ```
 python cli.py spec.py ../resourceTypes.yaml ../patientIds.yaml "2000-01-01T00:00:00Z" --libraryPath module --nthreads 4 --level 1 --pdsHost pds --pdsPort 1234 --configDir ../pdspi-mapper-parallex-example/config
