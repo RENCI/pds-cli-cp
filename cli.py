@@ -70,8 +70,12 @@ print(fhirEnd - fhirStart)
 if resp.status_code != 200:
     print(resp.text)
 
-fhir = {
-    "data": resp.json(),
+fhir = resp.json()
+
+mapperStart = time.time()
+print(f"libraryPath = {libraryPath}")
+resp = requests.post(f"http://localhost:{pdsPort}/v1/plugin/pdspi-mapper-parallex-example/mapping", json={
+    "data": fhir,
     "settingsRequested": {
         "modelParameters": [{
             "id": "specName",
