@@ -1,4 +1,3 @@
-from tx.parallex import run_python
 import pprint
 import sys
 import yaml
