@@ -1,3 +1,4 @@
+from tx.parallex import run_python
 import pprint
 import sys
 import yaml
@@ -34,7 +35,7 @@ configDir = args.configDir
 if configDir is not None:
     shutil.copy(f"config/{specName}", configDir)
     for p in libraryPath:
-        shutil.copytree(f"config/{p}", f"{configDir}/{p}", dirs_exists_ok=True)
+        shutil.copytree(f"config/{p}", f"{configDir}/{p}", dirs_exist_ok=True)
 
 with open(patientIdsFile) as f:
     patientIds = yaml.safe_load(f)
