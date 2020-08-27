@@ -1,4 +1,4 @@
-# pdspi-cli-cp
+# pds-cli-cp
 
 ## prerequisites
  python 3.8 or higher
