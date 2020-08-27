@@ -8,7 +8,7 @@ import shutil
 
 parser = argparse.ArgumentParser(description='pds cli for cp')
 parser.add_argument('specName', help='spec name')
-parser.add_argument('--libraryPath', nargs="*", help='python module path')
+parser.add_argument('--libraryPath', nargs="*", default=[], help='python module path')
 parser.add_argument('--nthreads', type=int, default=4, help='number of threads')
 parser.add_argument('--level', type=int, default=0, help='level')
 parser.add_argument('resourceTypesFile', help='resource types file')
@@ -62,7 +62,7 @@ if resp.status_code != 200:
 fhir = resp.json()
 
 mapperStart = time.time()
-
+print(f"libraryPath = {libraryPath}")
 resp = requests.post(f"http://localhost:{pdsPort}/v1/plugin/pdspi-mapper-parallex-example/mapping", json={
     "data": fhir,
     "settingsRequested": {
