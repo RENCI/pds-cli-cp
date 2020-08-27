@@ -1,13 +1,13 @@
 # pds-cli-cp
 
-## prerequisites
+## Prerequisites
  python 3.8 or higher
  
  ```
  pip install pyyaml requests tx-functional
  ```
 
-## how to run the code
+## How to run the code
 
 To use the cli tools, if your mapper runs on a local host, put your spec under `config`. Put your custom python functions under a sub dir in that dir. 
 
