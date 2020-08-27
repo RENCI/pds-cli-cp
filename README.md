@@ -9,7 +9,7 @@
 
 ## How to run the code
 
-To use the cli tools, if your mapper runs on a local host, put your spec under `config`. Put your custom python functions under a sub dir in that dir. 
+To use the cli tools, if your mapper runs on the local host, put your spec under `config`. Put your custom python functions under a sub dir in that dir. 
 
 If your mapper runs on a remote host you need to manually copy them to the `config` dir.
 
