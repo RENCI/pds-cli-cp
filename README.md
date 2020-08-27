@@ -9,7 +9,11 @@
 
 ## how to run the code
 
-To use the cli tools, put your spec under `config`. Put your custom python functions under a sub dir in that dir. There is a `cli.py`. You can run it as
+To use the cli tools, if your mapper runs on a local host, put your spec under `config`. Put your custom python functions under a sub dir in that dir. 
+
+If your mapper runs on a remote host you need to manually copy them to the `config` dir.
+
+There is a `cli.py`. You can run it as
 
 ```
 python cli.py <file containing your spec> <a yaml file containing resource types> <a yaml file contains pids> <timestamp> --libraryPath <sub dir containing custom python functions> --nthreads <number of threads> --level <level> --pdsHost <pds plugin host> --pdsPort <pds plugin port> --configDir <mapper config dir>
