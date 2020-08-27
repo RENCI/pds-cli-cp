@@ -2,6 +2,10 @@
 
 ## prerequisites
  python 3.8 or higher
+ 
+ ```
+ pip install pyyaml requests tx-functional
+ ```
 
 ## how to run the code
 
