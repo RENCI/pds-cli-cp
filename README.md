@@ -14,6 +14,7 @@ To use the cli tools, if your mapper runs on the local host, you can put your sp
 If your mapper runs on a remote host, you need to manually copy them to the `config` dir.
 
 Start your pds server.
+
 There is a `cli.py`. You can run it as
 
 ```
