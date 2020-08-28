@@ -1,8 +1,3 @@
-## how to write a spec
-
-https://github.com/RENCI/tx-parallex
-
-
 ## Never leave a large project running without monitoring disk and cpu and memory usage
 
 ### disk usage
@@ -22,8 +17,8 @@ run
 
 
 
-
-if they get above say certain threshold that you're not expecting then stop the script and docker containers
+### resolving a disk usage problem
+if they get above say certain threshold that you're not expecting (e.g., 80%) then stop the script and docker containers
 
 delete containers
 ```docker rm -f $(docker ps -qa)```
