@@ -43,3 +43,7 @@ delete volumes
 
 delete networks
 ```docker network prune -f```
+
+
+## don't write to the output a lot
+If you write custom code don't write to the output a lot. Even a small amount of data per patient is going to create a large log when number of patients are high.
