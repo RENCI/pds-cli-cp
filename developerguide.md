@@ -1,3 +1,8 @@
+## how to write a spec
+
+https://github.com/RENCI/tx-parallex
+
+
 ## Never leave a large project running without monitoring disk and cpu and memory usage
 
 ### disk usage
