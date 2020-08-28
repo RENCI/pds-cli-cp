@@ -1,3 +1,15 @@
+## how to write a spec
+
+the following variables are provided to the spec
+
+`data`: this is the fhir data, it is an array of fhir bundles, each bundle contains all fhir resources to a patient
+
+`patientIds`: this is a list of patient ids
+
+`timestamp`: this is a timestamp
+
+
+
 ## Never leave a large project running without monitoring disk and cpu and memory usage
 
 ### disk usage
