@@ -1,5 +1,6 @@
 tx-parallex>=0.0.81
 pandas
 requests
+pyyaml
 
 
