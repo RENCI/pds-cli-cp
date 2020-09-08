@@ -143,6 +143,7 @@ elif resp.status_code == 204:
     with open(outputJSON_path) as o:
         ret = json.load(o)
 else:
+    ret = None
     print(resp.text)
 
 if ret is not None:
