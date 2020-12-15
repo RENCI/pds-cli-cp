@@ -160,7 +160,7 @@ else:
     print(resp.text)
 
 if ret is not None:
-    print(json.dumps(ret, indent=4))
+    # print(json.dumps(ret, indent=4))
     writeCSV(ret, outputCSV)
-    pp = pprint.PrettyPrinter(indent=4)
-    pp.pprint(ret)
+    # pp = pprint.PrettyPrinter(indent=4)
+    # pp.pprint(ret)
